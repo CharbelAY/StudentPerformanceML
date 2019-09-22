@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material';
 import {MatListModule} from '@angular/material/list';
+import { ScrollDispatchModule } from '@angular/cdk/scrolling';
+
 
 
 
@@ -41,7 +43,8 @@ import {MatListModule} from '@angular/material/list';
     FormsModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    MatListModule
+    MatListModule,
+    ScrollDispatchModule
     
   ],
   providers: [],
