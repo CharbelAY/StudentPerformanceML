@@ -19,20 +19,15 @@
 
         <div class="col l8 m8 s12 offset-l2 offset-m2">
 
-                <ul class="collection">
-                        <li class="collection-item active">Alvin</li>
-                        <li class="collection-item">Alvin</li>
-                        <li class="collection-item">Alvin</li>
-                        <li class="collection-item">Alvin</li>
-                      </ul>
+                <mat-selection-list #shoes>
+                        <mat-list-option *ngFor="let shoe of typesOfShoes">
+                          {{shoe}}
+                        </mat-list-option>
+                      </mat-selection-list>
         </div>
         
     </div>
-    <div class="row">
-    <i class="material-icons col l1 m1 s3 offset-l2 offset-m1 " style="font-size:80 ">keyboard_arrow_left</i>
 
-    <i class="material-icons col l1 m1 s3 offset-l6 offset-m8 offset-s6 " style="font-size:80">keyboard_arrow_right</i>
-    </div>
 
 </body>
 </html>

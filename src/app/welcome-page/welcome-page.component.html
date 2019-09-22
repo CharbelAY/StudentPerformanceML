@@ -43,19 +43,17 @@
             <br><br><br><br>
 
             <div class="input-field col l4 m4 s12 offset-l4 offset-m4">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
+                    <input #box id="password" type="password" class="validate">
+                    <label for="password" >Password</label>
             </div>
 
             <div class="col l4 m4 s12 offset-l4 offset-m4">
-                <a class="waves-effect waves-light btn" (click)="redirect('question')">Start Survey</a>
+                <a class="waves-effect waves-light btn" (click)="redirect('question',box.value)">Start Survey</a>
             </div>
 
             </div>
 
         </div>
-
-                    
 
 </body>
 
