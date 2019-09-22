@@ -1,0 +1,62 @@
+<!Doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+        <div id="overlay" (click)="close_overlay()">
+            <div class="row">
+                <br><br><br>
+                <div class="col l8 m8 s12 offset-l1" style="color:white; font-size: 30px;"><u>All collected data will be Anonimized</u></div>
+                <br><br><br>
+                <div class="col l5 m5 s12 offset-l1" style="color:white; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta optio dolore magnam. Minus eius ab eveniet tenetur perspiciatis unde distinctio mollitia voluptas illum ipsam quaerat repudiandae fugiat, facere, similique temporibus.</div>
+            </div>
+        </div>
+
+        <div class=" standard1">
+            <div class="row">
+            <div class="col l9 m9 s12 offset-l1">
+                Thank you for taking this survey
+            </div>
+            
+            <br><br>
+
+            <div class="col l6 m6 s12 offset-l6 offset-m6 standard2 " >
+                <a class="waves-effect waves-teal btn-flat">About the survey</a>
+                &nbsp;
+                <a class="waves-effect waves-teal btn-flat" (click)="open_overlay()">Privacy</a>
+                 &nbsp;
+                 <a class="waves-effect waves-teal btn-flat">Data Access</a>
+                </div>
+
+            <div class="col l6 m6 s12 question">
+                <p>What are the indirect factors that affect student performance at university? </p>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="input-field col l4 m4 s12 offset-l4 offset-m4">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+            </div>
+
+            <div class="col l4 m4 s12 offset-l4 offset-m4">
+                <a class="waves-effect waves-light btn" (click)="redirect('question')">Start Survey</a>
+            </div>
+
+            </div>
+
+        </div>
+
+                    
+
+</body>
+
+</html>
