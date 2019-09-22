@@ -10,22 +10,22 @@
 <body>
     
     <div class="row">
+    <div *ngFor="let row of Questionaire">
         <br><br><br>
         <div class="col l8 m8 s12 offset-l2 offset-m2" style="font-size:30px; color:black; text-align: center">
-                Which statement is true ? 
+                {{row['question']}}
         </div>
-
         <br><br><br>
 
         <div class="col l8 m8 s12 offset-l2 offset-m2">
-
-                <mat-selection-list #shoes>
-                        <mat-list-option *ngFor="let shoe of typesOfShoes">
-                          {{shoe}}
-                        </mat-list-option>
-                      </mat-selection-list>
+            <div *ngFor="let answer of row['answers']">
+                <label>
+                <input name="group1" type="radio" checked  (click)="loge(shoe)"/>
+                <span>{{answer}}</span>
+                </label>
+            </div>
         </div>
-        
+    </div>
     </div>
 
 
